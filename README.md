@@ -1,5 +1,5 @@
 # RplotStrace
-Rscript which plots strace logfiles
+Rscript which plots strace logfiles (both histogram/frequency and density plots)
 
 The '.strace' logfiles should be created running this commandline
   "strace -f -e io_submit <fiocmd>"
