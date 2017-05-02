@@ -71,10 +71,10 @@ for (stracefile in filelist) {
 # set points per inch for plotting
     ppi <- 300
 
-# FREQUENCY plot: Make a 6x6 inch image at 300dpi
+# FREQUENCY plot: Make image at 300dpi
     message(sprintf("> Creating frequency plot\n"))
     png(paste(stracefile,"_freq.png",sep=""), 
-      width=6*ppi, height=6*ppi, res=ppi)
+      width=10*ppi, height=6*ppi, res=ppi)
     hist(DATA, xlab = paste(syscall, " Values : #Samples=", numrows), 
       main = paste("Histogram: ", stracefile), 
       col = "lightgreen")
@@ -85,7 +85,7 @@ for (stracefile in filelist) {
 #    message(sprintf("> Creating density plot\n"))
 #    d <- density(DATA)
 #    png(paste(stracefile,"_density.png",sep=""), 
-#      width=6*ppi, height=6*ppi, res=ppi)
+#      width=10*ppi, height=6*ppi, res=ppi)
 #    plot(d, xlab = paste(syscall, " Values : #Samples=", numrows),
 #      main = paste("Kernel Density: ", datafile)
 #    polygon(d, col="aquamarine", border="blue")
