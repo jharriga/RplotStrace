@@ -7,6 +7,6 @@ The '.strace' logfiles should be created running this commandline
 The makeplot.R script uses 'grep' cmd to extract offset values from strace logfiles.
 NOTE: variable 'regex_iosubmit_offset' can be adapted to work with alternative strace output formats
 
-To create plots with the provided sample data
-   $ makeplot.R SampleData
+To create plots with the provided sample data ue this cmdline:
+   "makeplot.R SampleData"
    
